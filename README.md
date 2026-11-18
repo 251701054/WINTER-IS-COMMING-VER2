@@ -53,10 +53,10 @@ zsh build.sh
 Click the ❄︎ icon chilling in your menu bar, or use these quick combos:
 
 Shortcut	Winter Magic ✨
-⌘⌥P	---   ⏸️ Pause / ▶️ Resume the blizzard
-⌘⌥C	---   🧹 Clear all snow & snowballs (fresh slate!)
-⌘,	---   ⚙️ Open the Settings window
-⌘Q	---   👋 Melt away & Quit
+- ⌘⌥P	---   ⏸️ Pause / ▶️ Resume the blizzard
+- ⌘⌥C	---   🧹 Clear all snow & snowballs (fresh slate!)
+- ⌘,	---   ⚙️ Open the Settings window
+- ⌘Q	---   👋 Melt away & Quit
 
 ## 🎨 Make It Yours! 🧙‍♂️
 
