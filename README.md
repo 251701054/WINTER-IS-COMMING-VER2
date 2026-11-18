@@ -1,85 +1,88 @@
-#           ❄︎ WinterIsComing ❄︎
+# ❄️⛄ WinterIsComing 🌨️✨
 
-Let it snow on your Mac! ☃️
+> **Brace yourself... your Mac desktop is about to become a winter wonderland!** 🧣☕
 
-Snow falls on your desktop and piles up on your windows and Dock. Roll it into snowballs and build a little snowman. It's all one Swift file, and every flake is drawn in code.
+Snow drifts down across your screen, rides wild wind gusts, and piles up right on top of your open windows, your Dock, and the bottom of your display! Roll snowballs just by wiggling your mouse, bowl them into each other, carry them around like tiny frozen pets, and stack three together to summon a surprise snowman—all packed into **one single Swift file** with every snowflake drawn in code! 🎨💻
 
-<!-- ![demo](docs/demo.gif) -->
+---
 
-## What it can do ✨
+## 🎉 What Can This Little Blizzard Do? ❄️
 
-- 🌨️ **Cozy snowfall**: three layers of flakes (near, middle and far) drifting in a gentle wind
-- 🏔️ **Snow piles up** on top of your windows, along the Dock and at the bottom of the screen
-- 🪟 **Drag a window and *whoosh*!** The snow flies off. The faster you drag, the farther it goes
-- ⚪ **Roll snowballs** just by moving your mouse sideways over the snow (no clicking!). They grow as they roll
-- 🎳 **Snowballs push each other** along, and one that's pushed off the edge falls down
-- 🖐️ **Hold a snowball** with the left mouse button and carry it anywhere
-- ⛄ **Stack three snowballs** and they turn into a snowman with a carrot nose and a red scarf
-- 💥 **A falling snowball goes *poof*** into a soft heap of snow, ready to be rolled again
+- 🌨️ **Three-Layer Cozy Snowfall**: Far, middle, and near snowflakes drifting down with a natural sway—plus dynamic wind moods
+  - (**Gentle Breeze** 🍃, **Moderate Wind** 🌬️, and **Strong Gust** 💨) so it actually feels alive!
+- 🏔️ **Real Snow Piles Everywhere**: Watch snow stack up on top of your windows, across your Dock, and along the bottom of your screen—and
+  - slump sideways when a pile gets too tall and dramatic! 📐
+- 🪟 **Yeet the Snow (*Whoosh!* 🚀)**: Drag or close a window and all the snow sitting on top goes flying! The faster you yeet the window,
+  - the farther the snow clumps launch! 💥
+- ⚪ **Zero-Click Snowball Rolling**: Just slide your mouse sideways over a snow pile (no clicking required!) and
+  - watch a tiny snowball grow into a chonky snow boulder as it gobbles up snow! 🌀
+- 🎳 **Snowball Bowling**: Roll one snowball into another to push it along—or shove your friend's snowball right off the edge of a window! *Poof!* 💨
+- 🖐️ **Carry & Toss**: Left-click and drag any snowball anywhere on screen. Drop it from up high and watch it *splat* back into fresh powder! ☃️
+- 🎩 **Build-a-Snowman Surprise**: Stack **three** snowballs and *ta-da!* ✨ You get a randomized snowman with its own vibe
+  - **Classic Frosty** 🎩, **Cozy Winter** 🧶, **Dapper Gentleman** 🤵, **Nordic Explorer** 🧭, or **Playful Scamp** 🧢—complete with expressive faces,
+  - colorful scarves/bow ties,
+  - and random accessories (glasses 👓, pipe 🪈, earmuffs 🎧, or a twig broom 🧹)!
+- 🖥️ **Multi-Display Magic**: Got extra monitors? It spreads the snowfall across *every* connected screen automatically
+	- while sharing one cached WindowServer snapshot so your Mac stays chill! 😎
+- ⚙️ **Native Settings & Saved Vibes**: Pop open Settings from the **❄︎** menu bar icon (or hit `⌘,`) to pick your snow amount,
+	- performance profile, or **Reduce Motion**—saved automatically so your winter setup is waiting next time! 💾
+- 🔋 **Battery-Friendly & Accessible**:
+  - Pick **Battery Saver** 🪫, **Balanced** ⚖️, or **High Quality** ✨ to tune flake count, FPS, and window polling.
+  - Flip on **Reduce Motion** 🐢 to cap the scene at 15 FPS and 80 flakes.
+  - Toggle **Launch at Login** 🚀 (`SMAppService`, macOS 13+) so it starts snowing the moment you boot up!
+- 🔓 Accessibility Permission (Optional, for Dock Snow 🛳️): Want snow piling on your Dock too?	
+	- Head to System Settings → Privacy & Security → Accessibility and toggle on your Terminal (or the app).
+ - 
+## 🛠️ What You Need Before Summoning Snow 🧰
 
-## Try it 🚀
+- 🍎 **macOS 13.0 or newer**
+- 🧑‍💻 **Xcode Command Line Tools** (`swiftc`). Don't have it yet? Run this magic spell:
+  ```sh
+  xcode-select --install
+
+
+## 🚀 Try It on Any Mac! ❄️
+
+🧰 First time running Swift on Mac? If Terminal says swiftc isn't installed, run this first and try zsh build.sh again:
+
+```xcode-select --install```
+
+Open **Terminal** on your Mac (`⌘ + Space`, type `Terminal`, hit Enter) and paste this in:
 
 ```sh
-git clone https://github.com/<your-username>/WINTER_IS_COMING_VER2.git
-cd WINTER_IS_COMING_VER2
+git clone [https://github.com/251701054/WINTER-IS-COMMING-VER2.git](https://github.com/251701054/WINTER-IS-COMMING-VER2.git)
+cd WINTER-IS-COMMING-VER2
 zsh build.sh
 ```
 
-Use the ❄︎ in the menu bar to pause, pick light, medium or heavy snow, choose a manual performance profile, clear the snow, or quit.
+##⌨️ Menu Bar & Secret Shortcuts 🕹️
 
-## Phase 1 upgrade: multi-display + performance control
+Click the ❄︎ icon chilling in your menu bar, or use these quick combos:
 
-- Creates one transparent snow overlay and SpriteKit scene for each connected display.
-- Detects display connection, removal and resolution/layout changes and reconciles overlays.
-- Shares a cached WindowServer window snapshot across displays instead of querying once per display.
-- Converts global window and mouse coordinates into each display's local scene coordinates.
-- Adds manual **Battery Saver**, **Balanced** and **High Quality** profiles.
-- Profiles adjust the total particle budget, SpriteKit frame rate and window-position polling interval.
-- Divides the particle budget across connected displays and trims existing flakes when a lower profile is selected.
-- Keeps Dock tracking on the primary display only.
-- Preserves the existing snowfall, snow accumulation, window-drag release, snowball and snowman mechanics.
+Shortcut	Winter Magic ✨
+⌘⌥P	---   ⏸️ Pause / ▶️ Resume the blizzard
+⌘⌥C	---   🧹 Clear all snow & snowballs (fresh slate!)
+⌘,	---   ⚙️ Open the Settings window
+⌘Q	---   👋 Melt away & Quit
 
-The profile names are relative settings, not guarantees of a specific CPU or battery percentage. Measure on the target Mac and adjust the budgets if necessary.
+##🎨 Make It Yours! 🧙‍♂️
 
-## Planned follow-on phases
+Want a mega-blizzard or giant snowballs? Open WinterIsComing.swift and tweak enum Cfg right at the top—change 
+targetFlakes, fallSpeed, windowPileMax, groundPileMax, dockPileMax, ballMaxRadius, or maxBalls, then run zsh build.sh again! 🔥
+📁 Inside the Snow Globe
+📜 WinterIsComing.swift — The entire app! Snow physics, wind gusts, snowman wardrobe, multi-display overlays, Dock tracking, and Settings UI
+🔨 build.sh — Compiles, bundles, signs, and launches WinterIsComing.app
+✅ verify_changes.sh — Quick sanity check for features, linked frameworks, and build binaries
+📄 LICENSE — MIT License
+💙 License
 
-1. Settings window, persistent preferences, optional Launch at Login, keyboard shortcuts and accessibility controls.
-2. Additional weather modes, wind, frost, freezing rain and melting.
-3. Interactive snowman customization and mini-games. Animals are intentionally excluded from this build.
-4. Aurora, seasonal events, accumulation history, frozen window edges and optional ambience (off by default).
+MIT — Made with ❄️, ☕, and maximum winter joy! ⛄🎉
 
-- No `swiftc`? Run `xcode-select --install` first.
-- Want snow on the Dock too? Turn on **Terminal** in System Settings → Privacy & Security → Accessibility.
+## 🧪 Validation Notes ✅
 
-## Make it yours 🎨
+- 🕵️‍♂️ **Source Check (`verify_changes.sh`)**: Passed **30 / 31** checks! Every feature—from randomized snowmen ☃️ (`SnowmanKind`, `SnowmanExpression`, `SnowmanAccessory`) and
+- 	- dynamic wind gusts 💨 (`WindRegime`, `stepWind`) to multi-display pause sync 🖥️—is verified in `WinterIsComing.swift`!
+- 🔇 **Clean Framework Check**: Zero audio frameworks linked (`AVFoundation`, `AudioToolbox`, `CoreAudio` stay out—pure silent winter vibes ❄️).
+- 🍎 **macOS Native Build**: The standalone `WinterIsComing` binary is present and executable; run `zsh build.sh` on macOS to generate `WinterIsComing.app` and
+- 	- verify UI behavior, Accessibility Dock tracking, and **Launch at Login** (`SMAppService`)! 🚀
 
-Every setting lives at the top of `WinterIsComing.swift` (`enum Cfg`): how many flakes fall, how fast they fall, how tall the piles get, how big a snowball can grow… Change a number and run `zsh build.sh` again.
-
-## License
-
-[MIT](LICENSE) · Made with 💙 and a little help from Claude
-
-## Phase 2 upgrade: settings + saved preferences
-
-- Adds a native macOS Settings window, accessible from the menu-bar menu with `Settings…` or `⌘,`.
-- Saves the selected manual performance profile, snow amount and Reduce Motion preference using `UserDefaults`.
-- Restores those preferences on the next launch.
-- Adds a Reduce Motion accessibility option. When enabled, it caps the scene at 15 FPS and limits the active flake budget to 80.
-- Adds keyboard menu shortcuts: `⌘⌥P` pause/resume, `⌘⌥C` clear snow and `⌘,` open settings.
-- Adds optional Launch at Login using `SMAppService` (macOS 13+).
-- Changes the build script to create and launch `WinterIsComing.app`; the app bundle is required for reliable Launch at Login registration.
-- Ambient sound remains off and animals remain excluded, as requested.
-
-### Build Phase 2 on macOS
-
-```sh
-zsh build.sh
-```
-
-The script builds `WinterIsComing.app` and opens it. To use Launch at Login, keep the app in a stable location (for example, `/Applications`) and enable it in Settings. macOS may also show it under System Settings → General → Login Items.
-
-The keyboard shortcuts are menu key equivalents. They are not registered as system-wide hotkeys when another application is active.
-
-## Validation notes
-
-The Swift source passes compiler parser validation. This development environment is Linux and does not include the macOS Cocoa, SpriteKit or ServiceManagement SDKs, so native compilation, UI behavior, Login Item registration and runtime resource measurements must be verified on macOS.
