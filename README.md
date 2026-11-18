@@ -20,7 +20,7 @@ Snow falls on your desktop and piles up on your windows and Dock. Roll it into s
 ## Try it 🚀
 
 ```sh
-git clone https://github.com/<your-username>/WINTER_IS_COMING.git
+git clone https://github.com/<your-username>/WINTER_IS_COMING_VER2.git
 cd WINTER_IS_COMING_VER2
 zsh build.sh
 ```
