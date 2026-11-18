@@ -40,13 +40,6 @@ Snow drifts down across your screen, rides wild wind gusts, and piles up right o
   ```sh
   xcode-select --install
 
-
-## 🚀 Try It on Any Mac! ❄️
-
-🧰 First time running Swift on Mac? If Terminal says swiftc isn't installed, run this first and try zsh build.sh again:
-
-```xcode-select --install```
-
 Open **Terminal** on your Mac (`⌘ + Space`, type `Terminal`, hit Enter) and paste this in:
 
 ```sh
