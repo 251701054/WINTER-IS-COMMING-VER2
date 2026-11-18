@@ -55,7 +55,7 @@ cd WINTER-IS-COMMING-VER2
 zsh build.sh
 ```
 
-##⌨️ Menu Bar & Secret Shortcuts 🕹️
+## ⌨️ Menu Bar & Secret Shortcuts 🕹️
 
 Click the ❄︎ icon chilling in your menu bar, or use these quick combos:
 
@@ -65,7 +65,7 @@ Shortcut	Winter Magic ✨
 ⌘,	---   ⚙️ Open the Settings window
 ⌘Q	---   👋 Melt away & Quit
 
-##🎨 Make It Yours! 🧙‍♂️
+## 🎨 Make It Yours! 🧙‍♂️
 
 Want a mega-blizzard or giant snowballs? Open WinterIsComing.swift and tweak enum Cfg right at the top—change 
 targetFlakes, fallSpeed, windowPileMax, groundPileMax, dockPileMax, ballMaxRadius, or maxBalls, then run zsh build.sh again! 🔥
